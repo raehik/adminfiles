@@ -23,4 +23,4 @@ done
 
 cd "$(dirname "$0")"
 
-cp -R $(find etc -mindepth 1 -maxdepth 1) "/etc"
+cp -vR $(find etc -mindepth 1 -maxdepth 1) "/etc"
