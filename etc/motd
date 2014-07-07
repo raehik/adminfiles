@@ -1,0 +1,17 @@
+This is an MOTD, or "message of the day". You can put cool things like current
+system uptime and users, and maybe showcase the best scores on your favourite
+terminal games.
+You can change this message at `/etc/motd`.
+You can choose whether to print the 'last login' line by changing the line:
+    PrintLastLog yes
+at /etc/ssh/sshd_config to:
+    PrintLastLog no
+This seems to only affect SSH logins, though :'(
+You can choose whether this message is even printing by commenting out the
+line:
+    session    optional   pam_motd.so          motd=/etc/motd   
+at /etc/pam.d/system-login i.e.
+#    session    optional   pam_motd.so          motd=/etc/motd   
+You can also choose which file will be used for the MOTD.
+You can make a better MOTD by disabling this one and running a shell script on
+login!

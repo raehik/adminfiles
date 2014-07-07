@@ -1,0 +1,8 @@
+This account is currently not available. You can configure this message by
+editing the /etc/nologin.txt file! :o
+This should show up when you try to `su` to a that which has their shell
+configured as `[/usr]/bin/nologin`. You can also set it to `[/usr]/bin/false`
+to disable logins, but that doesn't show up a helpful message like nologin.
+This does -not- show up when you try to *login* to a nologin-ed user, either
+remotely or locally (physically): it just tells you that the login failed, as
+if you'd gotten the password wrong.
