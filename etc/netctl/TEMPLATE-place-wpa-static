@@ -1,0 +1,30 @@
+# vim: set ft=conf :
+#
+# A netctl profile for a static WPA connection.
+#
+
+Description="Place -- Wireless [WPA] (static)"
+
+Interface=wlp4s0
+Connection=wireless
+
+ESSID=""
+Security=wpa
+
+# You can use the passphrase or a PSK for this.
+# A PSK is suggested, since it means you don't keep the key in plaintext.
+#
+# To use a PSK, first generate one:
+#     $ wpa_passphrase <ssid> <passphrase>
+#
+# Then enter it into the Key variable, prepending \"
+#     i.e.    Key=\"0123456789abcdef
+# rather than Key="ayy lmao"
+Key=""
+
+IP=static
+Address=("192.168.1.50/24")
+Gateway="192.168.1.1"
+
+# use Google Public DNS
+DNS=("8.8.8.8" "8.8.4.4")

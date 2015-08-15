@@ -1,0 +1,11 @@
+# vim: set ft=conf :
+#
+# A netctl profile for a DHCP ethernet connection.
+#
+
+Description='Place -- Ethernet (DHCP)'
+
+Interface=enp5s0
+Connection=ethernet
+
+IP=dhcp

@@ -1,7 +1,0 @@
-Description='A basic static ethernet connection'
-EDIT_Interface=enp2s0
-Connection=ethernet
-IP=static
-EDIT_Address=('192.168.1.2/24')
-EDIT_Gateway='192.168.1.1'
-DNS=('8.8.8.8' '8.8.4.4')
