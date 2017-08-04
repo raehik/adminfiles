@@ -1,4 +1,1 @@
-  * print "last login" line in SSH: /etc/ssh/sshd_config: PrintLastLog yes
-  * MOTD filename/enabled: /etc/pam.d/system-login:
-    `session    optional   pam_motd.so          motd=/etc/motd`
-  * disable and run shell script on login shell
+/etc/motd -- check wiki for notes
