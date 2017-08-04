@@ -1,25 +1,20 @@
-# vim: set ft=conf :
+# vim: ft=conf
 #
 # A netctl profile for a DHCP WPA connection.
 #
 
-Description="Place -- Wireless [WPA] (DHCP)"
-
+Description='Net: Place - wireless [WPA] (DHCP)'
 Interface=wlp4s0
-Connection=wireless
-
-ESSID=""
-Security=wpa
-
-# You can use the passphrase or a PSK for this.
-# A PSK is suggested, since it means you don't keep the key in plaintext.
-#
-# To use a PSK, first generate one:
-#     $ wpa_passphrase <ssid> <passphrase>
-#
-# Then enter it into the Key variable, prepending \"
-#     i.e.    Key=\"0123456789abcdef
-# rather than Key="ayy lmao"
-Key=""
-
 IP=dhcp
+
+Connection=wireless
+ESSID='SSID'
+Security=wpa
+# You can use the plaintext passphrase, or generate a PSK from the passphrase.
+# The latter means the key isn't kept in plaintext, so I suggest a PSK.
+# Generate the PSK:
+#     $ wpa_passphrase <ssid> <passphrase>
+# Then enter it into the Key variable, prepending \"
+#     i.e.    Key=\"0123456789abcef    for PSK
+# rather than Key="plaintextkey123"    for passphrase
+Key=""

@@ -1,16 +1,14 @@
-# vim: set ft=conf :
+# vim: ft=conf
 #
 # A netctl profile for a static ethernet connection.
 #
 
-Description='Place -- Ethernet (static)'
-
-Interface=enp5s0
+Description='Net: Place - ethernet (static)'
+Interface=eth0
 Connection=ethernet
 
 IP=static
 Address=('192.168.1.50/24')
 Gateway='192.168.1.1'
-
 # use Google Public DNS
 DNS=('8.8.8.8' '8.8.4.4')
